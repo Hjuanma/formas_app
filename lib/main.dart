@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:formas_app/config/router/app_router.dart';
 
 import 'config/config.dart';
 
@@ -11,14 +12,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
       theme: AppTheme().getTheme(),
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
     );
   }
 }
