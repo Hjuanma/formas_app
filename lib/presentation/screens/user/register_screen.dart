@@ -110,7 +110,6 @@ class _RegisterFormState extends State<_RegisterForm> {
             FilledButton.tonalIcon(
               onPressed: () {
                 if(!_formKey.currentState!.validate()) return;
-                print("$userName, $email, $password");
               },
               icon: const Icon(Icons.save),
               label: const Text("Crear usuario"),
